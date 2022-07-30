@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        height: 100vh;
+        }
+        span{
+            font-size: 30pt;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <!-- <div class="sec-widget" data-widget="33caf9470ce06e57021eaedafbe44c3b"></div>
+    <div class="se-widget" data-widget="4q8Pvn7Cqm"  data-theme="dark"></div> -->
+
+    <div class="se-widget" data-widget="R7vomtjhAb" id="R7vomtjhAb" data-theme="test"></div>
+
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        
+
+        (function(d, s, id){
+          SE_BASE = "widgets.sphere-engine.com";
+          SE_HTTPS = true;
+          SE = window.SE || (window.SE = []);
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = (SE_HTTPS ? "https" : "http") + "://" + SE_BASE + "/static/sdk/sdk.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, "script", "sphere-engine-jssdk"));
+        SE.ready = function(f){if (document.readyState != "loading" && document.readyState != "interactive") f();else window.addEventListener("load", f);};
+
+
+      
+       
+
+        </script>
+        <script>
+            
+
+            SE.ready(function() {
+                
+                var checkStatus = function(data) {
+                  
+        
+                    localStorage.setItem("status",data.status.description)
+                };
+        
+                var SEWidget = SE.widget("R7vomtjhAb");
+                SEWidget.events.subscribe('checkStatus', checkStatus);
+                
+            });
+        </script>
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        SE.ready(function() {
+            var sourceCode = "<?php \n\n$hi = fopen('php://stdin', \"r\");\nfscanf($hi, \"%d\", $n);\n\
+    fclose($hi);\n\necho 'number: ' . $n;";
+            var SEWidget = SE.widget("example-widget");
+            SEWidget.loadSourceCode(29, sourceCode);
+        });
+    </script>
+    <script>
+
+        SEC_HTTPS = true;
+        SEC_BASE = "compilers.widgets.sphere-engine.com"; 
+        (function(d, s, id){ SEC = window.SEC || (window.SEC = []);
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; 
+          js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);   
+        }(document, "script", "sphere-engine-compilers-jssdk"));
+        </script>
+        <script>
+            (function(d, s, id){
+              SE_BASE = "widgets.sphere-engine.com";
+              SE_HTTPS = true;
+              SE = window.SE || (window.SE = []);
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = (SE_HTTPS ? "https" : "http") + "://" + SE_BASE + "/static/sdk/sdk.min.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, "script", "sphere-engine-jssdk"));</script>
+         <script>SEC.ready=function(e){
+            "loading"!=document.readyState&&"interactive"!=document.readyState?e():window.addEventListener("load",e)
+     
+            
+            };</script> -->
+
+</body>
+</html>
